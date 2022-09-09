@@ -9,7 +9,9 @@ public class PairProgramming {
                 int num = input.nextInt();
                 System.out.println(armstrong(num));
             } else if (n==2) {
-                
+             System.out.println("Enter number for finding factors : ");
+                int a = input.nextInt();
+                factors(a);   
             }else{
                 System.out.println("Invalid Input");
             }
@@ -31,7 +33,13 @@ public class PairProgramming {
     }
     
 
-   
+  static void factors(int a){
+        for(int i = 1;i<=a/2;i++){
+            if(a%i==0){
+                System.out.print(i + ", ");
+            }
+        }
+    } 
 
 }
 
